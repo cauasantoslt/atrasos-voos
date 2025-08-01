@@ -1,0 +1,173 @@
+/* Variáveis de cores */
+:root {
+    --background-color: #0a0b16;
+    --card-background: #1a1b2d;
+    --text-color: #f0f2f5;
+    --secondary-text-color: #8b939f;
+    --accent-color: #ff00aa;
+    --border-color: #572283;
+    --green-color: #00ffaa;
+    --blue-color:#00d9ff; ;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: var(--card-background);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+}
+
+strong {
+    color: var(--green-color);
+}
+
+/* Estilo da seção principal */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Estilo dos "cards" de conteúdo */
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+    /* Animação */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.card h2 {
+    color: var(--accent-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--border-color);
+    margin-top: 0;
+    transition: border-bottom 0.1s ease;
+}
+
+.card h2:hover {
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.card h3 {
+    color: var(--blue-color);
+    margin-top: 1.5rem;
+    border-left: 3px solid var(--border-color);
+    padding-left: .5rem;
+}
+
+/* Estado visível para a animação */
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo para blocos de código */
+.code-block {
+    background-color: #0d0d1b;
+    color: #b3b3b3;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+pre {
+    margin: 0;
+}
+
+/* Estilo para imagens e gráficos */
+.image-container {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-text-color);
+    background-color: #1b003b6c;
+}
+
+a {
+    color: var(--green-color);
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+a:hover {
+    color: #008b5d;}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}
