@@ -34,6 +34,7 @@ Scikit-learn (opcional): Para a construção de modelos preditivos.
 📄 requirements.txt   → Lista de dependências
 📄 README.md          → Este arquivo
 
+
 # Como Executar 🚀
 Clone o repositório:
 
