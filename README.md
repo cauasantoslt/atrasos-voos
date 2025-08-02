@@ -29,9 +29,13 @@ Scikit-learn (opcional): Para a construção de modelos preditivos.
 
 # Estrutura do Projeto 🗂️
 📁 data/              → Conjunto de dados brutos e processados
+
 📁 notebooks/         → Jupyter notebooks com as análises
+
 📁 src/               → Scripts Python auxiliares (limpeza, visualização, etc.)
+
 📄 requirements.txt   → Lista de dependências
+
 📄 README.md          → Este arquivo
 
 
